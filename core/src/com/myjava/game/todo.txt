@@ -1,0 +1,82 @@
+REQUIREMENTS:
+    (can be easily done in intellij) Make a class diagram !3pt
+
+    Create 2 custom exceptions(2/2):
+        Create a PathNotFound exception for the Pathfinder class. !0.5pt
+        Create an InvalidMapData that will be thrown by the level.load(), e.g: Snake's spawn coordinates are inside the block.
+        DONE: InvalidNameException;
+
+    3/3 -- Handle 3 language exceptions. 1pt
+    Note: the last 3 just print the stacktrace, maybe do something better with them;
+        GDXRUNTIME
+        IOEXCEPTION
+        CLASSNOTFOUNDEXCEPTION
+        FILENOTFOUNDEXCEPTION
+        -Try to parse the strings from the CSV as ints, and instead of "level1" it should just be "1", this will ensure that
+        no strings are where they shouldn't be, the same could go with score
+        -Try avoiding or cleaning corrupt data
+        -use builtin java File library(FileReader/FileWriter), get the path with getAbsoluteFile() method from Gdx.internal/local...
+
+    DONE Validate input data? !1pt
+        -validation already exists in the controls, you can't sprint forever, you can't change to your opposite directions
+
+    DONE -- needs a better interface
+        GameState implements Serializable:
+            -will be used for saving and loading the game
+            -on the pause screen, a "Save Game" button will be added,
+            which will call a function to construct a GameState object,
+            and save it using an ObjectOutputStream
+            -on the menu screen, a "Load Game" button will be added,
+            loading a scrollable table with GameState objects, and the user may
+            select one and continue playing
+            -the game state will only save the level the player is currently on,
+            and the score they had when they started that level
+            -a new constructor SnakeScreen(GameState) will need to be implemented
+
+DONE:
+    Some classes are terribly bloated (e.g. SnakeScreen), the following refactors should ease that up.
+
+    DONE: HUD CLASS
+        DONE: should use an enum for switching between screens;
+        DONE: make it outside of the snakeScreen class
+        DONE: should have a Player instance and a PlayableSnake instance;
+        DONE: should also probably have a MyGame instance;
+        DONE: implement the buttons for death_screen;
+        DONE: separate table generations into multiple functions;
+
+    Leaderboard:
+        maybe make it more static? or make it an instance of MyGame
+        then move the add_to_leaderboard() function from SnakeScreen into the Leaderboard class.
+
+
+DONE:
+    Leaderboard:
+        -has a nested class Row, with members String name, int score, int level
+        -has an ArrayList of rows
+        -function to return a table of labels
+        -three functions to sort by name, score, level
+        -will be used in the LeaderboardScreen
+
+    Snake implements Drawable, Comparable<Snake>:
+        -make an abstract snake class
+        -members:
+            public LinkedList<Vector2> segments
+            protected float dt_counter
+            protected SnakeMap map_
+            protected MyGame game
+            protected float speed
+            public boolean is_alive
+            @Override compareTo(Snake) // will be used to decide which Snake wins in the event of a collision
+
+    EnemySnake:
+        private/public Pathfinder pathfinder
+        protected Iterator<Vector2> path_iterator;
+
+    PlayableSnake implements Playable:
+        private Vector2 direction
+        private SnakePlayer player;
+        private float sprint_speed;
+        private boolean is_sprinting;
+        private int stamina;
+        private static final int MAX_STAMINA = 10
+

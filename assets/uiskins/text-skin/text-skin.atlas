@@ -1,0 +1,13 @@
+
+text-skin.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Inconsolata-Black
+  rotate: false
+  xy: 1, 329
+  size: 504, 174
+  orig: 504, 174
+  offset: 0, 0
+  index: -1
