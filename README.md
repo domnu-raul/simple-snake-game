@@ -1,6 +1,6 @@
-# Snake Game
+# Simple Snake Game
 
-Welcome to the Snake Game! This project is a simple 2-level snake game where the player controls a snake to defeat an enemy snake, unlock doors, and navigate through obstacles. Below is an overview of the project structure and key functionalities.
+This project is a simple 2-level snake game where the player controls a snake to defeat an enemy snake, unlock doors, and navigate through obstacles. Below is an overview of the project structure and key functionalities.
 
 ## Features
 
@@ -46,13 +46,11 @@ The class diagram provided below was generated using IntelliJ:
    - Save your game progress to resume later.
    - Enter your name in the leaderboard when your snake meets its end.
 
-## Development Setup
+## Setup
 
-1. **Requirements:**
-   - Java Development Kit (JDK)
-   - LibGDX Game Development Framework
+Requires Java Development Kit(JDK).
 
-2. **Build from Source:**
+**Build from Source:**
    ```bash
    git clone https://github.com/domnu-raul/simple-snake-game.git
    cd simple-snake-game
