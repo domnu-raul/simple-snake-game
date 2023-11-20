@@ -52,7 +52,7 @@ The class diagram provided below was generated using IntelliJ:
    - Java Development Kit (JDK)
    - LibGDX Game Development Framework
 
-2. **Clone the Repository:**
+2. **Build from Source:**
    ```bash
    git clone https://github.com/domnu-raul/simple-snake-game.git
    cd simple-snake-game
