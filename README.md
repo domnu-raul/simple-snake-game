@@ -26,22 +26,11 @@ Welcome to the Snake Game! This project is a simple 2-level snake game where the
    - Save the game's progress, including the current level and score.
    - Enter your name in the leaderboard when the player dies.
 
-## Class Diagram Overview
+## Class Diagram
 
-The class diagram provides an overview of the project structure. Here are some key classes and interfaces:
+The class diagram provided below was generated using IntelliJ:
 
-- **Background:** Represents the background of the game.
-- **Door:** Manages the door functionality, including opening and transitioning to the next level.
-- **EnemySnake:** Represents the NPC enemy snake, including pathfinding and movement.
-- **Food:** Represents the in-game food that both snakes can consume.
-- **GridMap:** Handles the grid-based map and obstacles.
-- **Leaderboard:** Manages the game's leaderboard, allowing players to enter their names.
-- **PlayableSnake:** Represents the player-controlled snake.
-- **Player:** Represents the player entity.
-- **SaveHandler:** Manages game saves and loading.
-- **SnakeMap:** Represents the map for the snakes to navigate.
-- **SnakePlayer:** Handles player input and score tracking.
-- **SnakeScreen:** Manages the game screen, including rendering and transitioning between states.
+![class diagram](https://i.imgur.com/kkVKH3H.png)
 
 ## Controls
 
