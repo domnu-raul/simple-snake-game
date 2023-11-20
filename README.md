@@ -43,21 +43,17 @@ The class diagram provides an overview of the project structure. Here are some k
 - **SnakePlayer:** Handles player input and score tracking.
 - **SnakeScreen:** Manages the game screen, including rendering and transitioning between states.
 
-## How to Play
+## Controls
 
 1. **Controls:**
-   - Use arrow keys or a similar input method to control the playable snake.
+   - Use arrow keys or WASD to control the snake.
+   - Use space to sprint, but mind your stamina level.
    - Navigate through the map, defeat the enemy snake, and unlock the door to progress.
 
 2. **Scoring:**
    - Gain points by defeating the enemy snake and progressing through levels.
-   - Save your progress to track your achievements in the leaderboard.
 
-3. **Level Progression:**
-   - Each level introduces new challenges, obstacles, and enemy behaviors.
-   - Reach the end of Level 2 to complete the game.
-
-4. **Saving and Leaderboard:**
+3. **Saving and Leaderboard:**
    - Save your game progress to resume later.
    - Enter your name in the leaderboard when your snake meets its end.
 
@@ -69,4 +65,4 @@ The class diagram provides an overview of the project structure. Here are some k
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your_username/snake-game.git
+   git clone https://github.com/domnu-raul/simple-snake-game.git
