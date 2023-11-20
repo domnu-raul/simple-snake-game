@@ -32,7 +32,7 @@ The class diagram provided below was generated using IntelliJ:
 
 ![class diagram](https://i.imgur.com/kkVKH3H.png)
 
-## Controls
+## Gameplay
 
 1. **Controls:**
    - Use arrow keys or WASD to control the snake.
