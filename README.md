@@ -52,7 +52,7 @@ Requires Java Development Kit(JDK).
 
 **Build from Source:**
    ```bash
-   git clone https://github.com/domnu-raul/simple-snake-game.git
+   git clone https://github.com/domnu-raul/simple-snake-game
    cd simple-snake-game
    ./gradlew desktop:dist
    ```
