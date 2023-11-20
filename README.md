@@ -55,3 +55,7 @@ The class diagram provided below was generated using IntelliJ:
 2. **Clone the Repository:**
    ```bash
    git clone https://github.com/domnu-raul/simple-snake-game.git
+   cd simple-snake-game
+   ./gradlew desktop:dist
+   ```
+   Use ```java -jar ./desktop/build/libs/desktop-1-0.jar``` to play the game.
