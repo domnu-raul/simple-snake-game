@@ -48,7 +48,7 @@ The class diagram provided below was generated using IntelliJ:
 
 ## Setup
 
-Requires Java Development Kit(JDK).
+Requires JDK 11.
 
 **Build from Source:**
    ```bash
